@@ -1,12 +1,28 @@
 html, body {
-    height:100%;
-    font-family: 'Roboto', sans-serif;
-  }
-   .bg-white {
-     background-color: white!important;
-   }
-  
-  img:hover {
-    cursor: pointer;
-  }
+  height:100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bgimg {
+  background-image: url("img/background.png");
+  background-position: center bottom;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+.bg-l1 {
+  background-color: #DDDDDD;
+}
+
+.bg-l2 {
+  background-color: #CCCCCC;
+}
+
+.bg-l3 {
+  background-color: #BBBBBB;
+}
+
+.bg-l4 {
+  background-color: #AAAAAA;
+}
   
