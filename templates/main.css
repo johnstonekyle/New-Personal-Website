@@ -1,0 +1,12 @@
+html, body {
+    height:100%;
+    font-family: 'Roboto', sans-serif;
+  }
+   .bg-white {
+     background-color: white!important;
+   }
+  
+  img:hover {
+    cursor: pointer;
+  }
+  
