@@ -11,7 +11,7 @@ $(document).ready(function(){
         var hash = this.hash;
 
         //navbar height
-        var navheight = 40;
+        var navheight = 100;
 
         //2000 specifies the speed
         $('html, body').animate({

@@ -11,12 +11,14 @@
     <!-- my css -->
     <link rel="stylesheet" href="main.css">
 
-    <!--font-family: 'Roboto', sans-serif; -->
+    <!--font-family: 'Cedarville Cursive', cursive; -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!-- font-family: 'Marck Script', cursive; -->
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <!-- font-family: 'Grand Hotel', cursive; -->
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
     <!-- font-family: 'Poppins', sans-serif; -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/3346ad4e0b.js" crossorigin="anonymous"></script>
 
     <title>Kyle Johnstone</title>
   </head>
@@ -25,30 +27,32 @@
     
 
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pl-5 pr-5">
-        <a class="navbar-brand" href="#home-section">Kemily Strongstone</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <!-- linking to different sections on page -->
-            <li class="nav-item">
-              <a class="nav-link" href="#about-section">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience-section">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills-section">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects-section">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-section">Contact</a>
-            </li>
-          </ul>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <div class="container">
+          <a class="navbar-brand" href="#home-section">
+            <img height='100px' src='img/avataaars.svg'/>
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <!-- linking to different sections on page -->
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience-section">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills-section">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -56,13 +60,15 @@
         <!-- make background image fill screen -->
         <div class="row flex-fill m-0 d-flex overflow-auto bg-dark text-light bgimg"> 
             <div class="container align-self-center text-center">
-                <span class="top-heading font-weight-bold">Hello World</span>
+                <span class="top-heading font-cedarville">I'm Kyle.</span>
+                <div class="mt-3"> a comp sci student and developer </div>
+                <a class="fas fa-chevron-down text-light" id="chevron-down" href="#about-section"></a>
             </div>
         </div>
       </div>
 
       <!-- About Me -->
-      <div id="about-section" class="jumbotron jumbotron-fluid m-0 bg-light">
+      <div id="about-section" class="jumbotron jumbotron-fluid m-0 bg-l0">
         <div class="container">
           <h1 class="display-7">About Me</h1>
           <p class="lead">
@@ -84,18 +90,34 @@
       <div id="experience-section" class="jumbotron jumbotron-fluid m-0 bg-l1">
         <div class="container">
           <h1 class="display-7">Experience</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque viverra mauris. Commodo 
-            viverra maecenas accumsan lacus. Amet aliquam id diam maecenas ultricies. Elementum integer enim neque 
-            volutpat. Odio ut sem nulla pharetra diam sit amet. Mauris cursus mattis molestie a iaculis at erat pellentesque 
-            adipiscing. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Nunc faucibus a pellentesque sit 
-            amet porttitor eget. A erat nam at lectus urna. Augue lacus viverra vitae congue eu. Interdum velit laoreet id 
-            donec ultrices tincidunt arcu non sodales. Duis ut diam quam nulla porttitor. Vel orci porta non pulvinar neque 
-            laoreet suspendisse interdum. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. 
-            Malesuada pellentesque elit eget gravida. Neque aliquam vestibulum morbi blandit cursus risus at. Scelerisque 
-            eleifend donec pretium vulputate.
-          </p>
+
+          <div class="timeline">
+            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                <h3 class=" text-light">Timeline Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
+              </div>
+              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                <img src="img/img13.png" class="img-fluid" alt="img">
+              </div>
+              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                <time>2018-02-23</time>
+              </div>
+            </div>
+            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                <h3 class=" text-light">Timeline Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
+              </div>
+              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                <img src="img/img13.png" class="img-fluid" alt="img">
+              </div>
+              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                <time>2018-02-23</time>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
 
@@ -118,27 +140,8 @@
         </div>
       </div>
 
-      <!-- Projects -->
-      <div id="projects-section" class="jumbotron jumbotron-fluid m-0 bg-l3">
-        <div class="container">
-          <h1 class="display-7">Projects</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque viverra mauris. Commodo 
-            viverra maecenas accumsan lacus. Amet aliquam id diam maecenas ultricies. Elementum integer enim neque 
-            volutpat. Odio ut sem nulla pharetra diam sit amet. Mauris cursus mattis molestie a iaculis at erat pellentesque 
-            adipiscing. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Nunc faucibus a pellentesque sit 
-            amet porttitor eget. A erat nam at lectus urna. Augue lacus viverra vitae congue eu. Interdum velit laoreet id 
-            donec ultrices tincidunt arcu non sodales. Duis ut diam quam nulla porttitor. Vel orci porta non pulvinar neque 
-            laoreet suspendisse interdum. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. 
-            Malesuada pellentesque elit eget gravida. Neque aliquam vestibulum morbi blandit cursus risus at. Scelerisque 
-            eleifend donec pretium vulputate.
-          </p>
-        </div>
-      </div>
-
       <!-- Contact -->
-      <div id="contact-section" class="jumbotron jumbotron-fluid m-0 bg-l4">
+      <div id="contact-section" class="jumbotron jumbotron-fluid m-0 bg-l3">
         <div class="container">
           <h1 class="display-7">Contact</h1>
           <p class="lead">
