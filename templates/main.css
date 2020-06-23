@@ -8,6 +8,8 @@ html, body {
   background-position: center bottom;
   background-size: cover; 
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Marck Script', cursive;
 }
 
 .bg-l1 {
@@ -25,4 +27,11 @@ html, body {
 .bg-l4 {
   background-color: #AAAAAA;
 }
-  
+
+.top-heading {
+    font-size: 64px;
+}
+
+.bg-light {
+    transition: background-color 1000ms linear;
+}

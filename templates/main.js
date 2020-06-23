@@ -13,15 +13,22 @@ $(document).ready(function(){
         //navbar height
         var navheight = 40;
 
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        //2000 specifies the speed
         $('html, body').animate({
             scrollTop: $(hash).offset().top - navheight
         }, 2000, function(){
 
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            //window.location.hash = hash;
         });
-        } // End if
+        }
+    });
+});
+
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $(".fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        $nav.toggleClass('navbar-light', $(this).scrollTop() > $nav.height());
+        $nav.toggleClass('navbar-dark', $(this).scrollTop() <= $nav.height());
+        $nav.toggleClass('bg-light', $(this).scrollTop() > $nav.height());
     });
 });
