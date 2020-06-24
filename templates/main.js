@@ -11,7 +11,7 @@ $(document).ready(function(){
         var hash = this.hash;
 
         //navbar height
-        var navheight = 100;
+        var navheight = 30;
 
         //2000 specifies the speed
         $('html, body').animate({
@@ -27,8 +27,8 @@ $(function () {
     $(document).scroll(function () {
         var $nav = $(".fixed-top");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        $nav.toggleClass('navbar-light', $(this).scrollTop() > $nav.height());
-        $nav.toggleClass('navbar-dark', $(this).scrollTop() <= $nav.height());
-        $nav.toggleClass('bg-light', $(this).scrollTop() > $nav.height());
+        $nav.toggleClass('navbar-dark', $(this).scrollTop() > $nav.height());
+        $nav.toggleClass('navbar-light', $(this).scrollTop() <= $nav.height());
+        $nav.toggleClass('bg-dark', $(this).scrollTop() > $nav.height());
     });
 });

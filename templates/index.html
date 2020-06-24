@@ -27,10 +27,10 @@
     
 
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <div class="container">
-          <a class="navbar-brand" href="#home-section">
-            <img height='100px' src='img/avataaars.svg'/>
+          <a class="navbar-brand font-weight-bold" href="#home-section">
+            Kyle Johnstone <span class="font-weight-normal small text-muted d-none d-md-inline-block"> / Professional Human</span>
           </a>
           
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,16 +40,16 @@
             <ul class="navbar-nav ml-auto">
               <!-- linking to different sections on page -->
               <li class="nav-item">
-                <a class="nav-link" href="#about-section">About Me</a>
+                <a class="nav-link" href="#about-section" data-toggle="collapse" data-target=".navbar-collapse.show">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#experience-section">Experience</a>
+                <a class="nav-link" href="#experience-section" data-toggle="collapse" data-target=".navbar-collapse.show">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills-section">Skills</a>
+                <a class="nav-link" href="#skills-section" data-toggle="collapse" data-target=".navbar-collapse.show">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact-section">Contact</a>
+                <a class="nav-link" href="#contact-section" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
               </li>
             </ul>
           </div>
@@ -58,62 +58,213 @@
 
       <div class="container-full d-flex h-100 flex-column" id="home-section">
         <!-- make background image fill screen -->
-        <div class="row flex-fill m-0 d-flex overflow-auto bg-dark text-light bgimg"> 
+        <div class="row flex-fill m-0 d-flex overflow-auto bg-light text-dark bgimg"> 
             <div class="container align-self-center text-center">
-                <span class="top-heading font-cedarville">I'm Kyle.</span>
-                <div class="mt-3"> a comp sci student and developer </div>
-                <a class="fas fa-chevron-down text-light" id="chevron-down" href="#about-section"></a>
+              
+              <div class="row">
+                <div class="col">
+
+                  <svg width="264" height="280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="avataaars-raised-eyebrow 1">
+                      <mask id="mask0" maskUnits="userSpaceOnUse" x="0" y="0" width="264" height="280">
+                        <g id="mask0">
+                          <path id="Vector" d="M12 160c0 66.274 53.726 120 120 120s120-53.726 120-120h12V0H0v160h12z" fill="#fff" />
+                        </g>
+                      </mask>
+                      <g mask="url(#mask0)">
+                        <g id="Avatar">
+                          <mask id="mask1" maskUnits="userSpaceOnUse" x="32" y="36" width="200" height="244">
+                            <g id="mask1">
+                              <path id="Vector_2" d="M156 180.611V199h4c39.765 0 72 32.235 72 72v9H32v-9c0-39.765 32.235-72 72-72h4v-18.389c-17.237-8.189-29.628-24.924-31.695-44.73C70.48 135.058 66 130.052 66 124v-14c0-5.946 4.325-10.882 10-11.834V92c0-30.928 25.072-56 56-56s56 25.072 56 56v6.166c5.675.952 10 5.888 10 11.834v14c0 6.052-4.48 11.058-10.305 11.881-2.067 19.806-14.458 36.541-31.695 44.73z" fill="#fff" />
+                            </g>
+                          </mask>
+                          <g mask="url(#mask1)">
+                            <g id="BodyGroup">
+                              <path id="Shape" d="M156 180.611V199h4c39.765 0 72 32.235 72 72v9H32v-9c0-39.765 32.235-72 72-72h4v-18.389c-17.237-8.189-29.628-24.924-31.695-44.73C70.48 135.058 66 130.052 66 124v-14c0-5.946 4.325-10.882 10-11.834V92c0-30.928 25.072-56 56-56s56 25.072 56 56v6.166c5.675.952 10 5.888 10 11.834v14c0 6.052-4.48 11.058-10.305 11.881-2.067 19.806-14.458 36.541-31.695 44.73z" fill="#D0C6AC" />
+                              <path id="BodyRect" fill-rule="evenodd" clip-rule="evenodd" d="M0 36h264v244H0V36z" fill="#FFDBB4" />
+                              <path id="Shadow" fill-rule="evenodd" clip-rule="evenodd" d="M188 115v23c0 30.928-25.072 56-56 56s-56-25.072-56-56v-23 15c0 30.928 25.072 56 56 56s56-25.072 56-56v-15z" fill="#000" fill-opacity=".1" />
+                            </g>
+                          </g>
+                          <mask id="mask2" maskUnits="userSpaceOnUse" x="32" y="199" width="200" height="81">
+                            <g id="mask2">
+                              <path id="Vector_3" fill-rule="evenodd" clip-rule="evenodd" d="M105.192 199.052H104c-39.765 0-72 32.235-72 72V280h200v-8.948c0-39.765-32.235-72-72-72h-1.192c.127.983.192 1.984.192 3 0 13.807-12.088 25-27 25s-27-11.193-27-25c0-1.016.065-2.017.192-3z" fill="#fff" />
+                            </g>
+                          </mask>
+                          <g mask="url(#mask2)">
+                            <g id="ClothesGroup" fill-rule="evenodd" clip-rule="evenodd">
+                              <path id="Sweater" d="M105.192 199.052H104c-39.765 0-72 32.235-72 72V280h200v-8.948c0-39.765-32.235-72-72-72h-1.192c.127.983.192 1.984.192 3 0 13.807-12.088 25-27 25s-27-11.193-27-25c0-1.016.065-2.017.192-3z" fill="#262E33" />
+                              <path id="ClothesRect" d="M0 170h264v110H0V170z" fill="#262E33" />
+                              <path id="Collar" d="M156 192.28c6.182 4.555 10 10.826 10 17.748 0 7.205-4.137 13.705-10.771 18.3l-5.65-4.452-4.579.332 1-3.151-.078-.061c6.1-3.143 10.078-8.296 10.078-14.12V192.28zm-48-.709c-6.767 4.603-11 11.169-11 18.457 0 7.398 4.362 14.052 11.308 18.664l6.113-4.816 4.579.332-1-3.151.078-.061c-6.1-3.143-10.078-8.296-10.078-14.12v-15.305z" fill="#F2F2F2" />
+                            </g>
+                          </g>
+                          <mask id="mask3" maskUnits="userSpaceOnUse" x="0" y="0" width="264" height="280">
+                            <g id="mask3">
+                              <path id="Vector_4" fill-rule="evenodd" clip-rule="evenodd" d="M0 0h264v280H0V0z" fill="#fff" />
+                            </g>
+                          </mask>
+                          <g mask="url(#mask3)">
+                            <g id="NoseGroup">
+                              <path id="Nose" fill-rule="evenodd" clip-rule="evenodd" d="M120 130c0 4.418 5.373 8 12 8s12-3.582 12-8" fill="#000" fill-opacity=".16" />
+                            </g>
+                            <g id="TopGroup">
+                              <mask id="mask4" maskUnits="userSpaceOnUse" x="74" y="98" width="115" height="89">
+                                <g id="mask4">
+                                  <path id="Vector_5" fill-rule="evenodd" clip-rule="evenodd" d="M149.428 170.169c-2.513 2.294-5.19 3.325-8.575 2.604-.582-.124-2.957-4.538-8.853-4.538-5.897 0-8.27 4.414-8.853 4.538-3.385.721-6.062-.31-8.576-2.604-4.725-4.313-8.654-10.26-6.293-16.75 1.23-3.382 3.232-7.095 6.873-8.173 3.887-1.15 9.346-.002 13.264-.788 1.27-.254 2.656-.707 3.585-1.458.929.75 2.316 1.204 3.585 1.458 3.918.786 9.376-.362 13.264.788 3.64 1.078 5.642 4.79 6.873 8.173 2.361 6.49-1.568 12.437-6.294 16.75zM188.081 98c-3.41 8.4-2.093 18.858-2.724 27.676-.513 7.167-2.02 17.91-8.384 22.539-3.255 2.367-9.179 6.345-13.431 5.235-2.927-.764-3.24-9.16-7.087-12.303-4.363-3.565-9.812-5.131-15.306-4.89-2.37.105-7.165.08-9.15 1.903-1.983-1.823-6.777-1.798-9.148-1.902-5.494-.242-10.943 1.324-15.306 4.889-3.847 3.143-4.16 11.54-7.087 12.303-4.252 1.11-10.176-2.868-13.431-5.235-6.365-4.63-7.87-15.372-8.384-22.54-.63-8.817.686-19.275-2.724-27.675-1.66 0-.565 16.129-.565 16.129v20.356c.032 15.288 9.581 38.17 30.754 46.908C111.286 183.53 123.015 187 132 187s20.714-3.14 25.892-5.277c21.173-8.737 30.722-31.95 30.754-47.238V114.13S189.74 98 188.081 98z" fill="#fff" />
+                                </g>
+                              </mask>
+                              <g mask="url(#mask4)">
+                                <g id="BeardGroup" fill-rule="evenodd" clip-rule="evenodd">
+                                  <path id="Beard" d="M149.428 170.169c-2.513 2.294-5.19 3.325-8.575 2.604-.582-.124-2.957-4.538-8.853-4.538-5.897 0-8.27 4.414-8.853 4.538-3.385.721-6.062-.31-8.576-2.604-4.725-4.313-8.654-10.26-6.293-16.75 1.23-3.382 3.232-7.095 6.873-8.173 3.887-1.15 9.346-.002 13.264-.788 1.27-.254 2.656-.707 3.585-1.458.929.75 2.316 1.204 3.585 1.458 3.918.786 9.376-.362 13.264.788 3.64 1.078 5.642 4.79 6.873 8.173 2.361 6.49-1.568 12.437-6.294 16.75zM188.081 98c-3.41 8.4-2.093 18.858-2.724 27.676-.513 7.167-2.02 17.91-8.384 22.539-3.255 2.367-9.179 6.345-13.431 5.235-2.927-.764-3.24-9.16-7.087-12.303-4.363-3.565-9.812-5.131-15.306-4.89-2.37.105-7.165.08-9.15 1.903-1.983-1.823-6.777-1.798-9.148-1.902-5.494-.242-10.943 1.324-15.306 4.889-3.847 3.143-4.16 11.54-7.087 12.303-4.252 1.11-10.176-2.868-13.431-5.235-6.365-4.63-7.87-15.372-8.384-22.54-.63-8.817.686-19.275-2.724-27.675-1.66 0-.565 16.129-.565 16.129v20.356c.032 15.288 9.581 38.17 30.754 46.908C111.286 183.53 123.015 187 132 187s20.714-3.14 25.892-5.277c21.173-8.737 30.722-31.95 30.754-47.238V114.13S189.74 98 188.081 98z" fill="#FFDBB4" />
+                                  <path id="BeardRect" d="M16 72h264v244H16V72z" fill="#724133" fill-opacity=".41" />
+                                </g>
+                              </g>
+                              <mask id="mask5" maskUnits="userSpaceOnUse" x="74" y="34" width="116" height="66">
+                                <g id="mask5">
+                                  <path id="Vector_6" fill-rule="evenodd" clip-rule="evenodd" d="M75 98c.347 1.488 1.673 1.223 2 0-.463-1.554 3.296-28.752 13-36 3.618-2.517 23.008-4.768 42.313-4.754C151.409 57.259 170.42 59.51 174 62c9.704 7.248 13.463 34.446 13 36 .327 1.223 1.653 1.488 2 0 .72-10.298 0-63.726-57-63-57 .726-57.72 52.702-57 63z" fill="#fff" />
+                                </g>
+                              </mask>
+                              <g mask="url(#mask5)">
+                                <g id="HairGroup" fill-rule="evenodd" clip-rule="evenodd">
+                                  <path id="Hair" d="M75 98c.347 1.488 1.673 1.223 2 0-.463-1.554 3.296-28.752 13-36 3.618-2.517 23.008-4.768 42.313-4.754C151.409 57.259 170.42 59.51 174 62c9.704 7.248 13.463 34.446 13 36 .327 1.223 1.653 1.488 2 0 .72-10.298 0-63.726-57-63-57 .726-57.72 52.702-57 63z" fill="#28354B" />
+                                  <path id="HairRect" d="M74 34h264v280H74V34z" fill="#724133" />
+                                </g>
+                              </g>
+                            </g>
+                            <g id="MouthGroup">
+                              <path id="Mouth" fill-rule="evenodd" clip-rule="evenodd" d="M118 149c0 7.732 6.268 14 14 14s14-6.268 14-14" fill="#000" fill-opacity=".7" />
+                            </g>
+                            <g id="EyeGroup" fill="#000" fill-opacity=".6">
+                              <path id="LeftEye" d="M106 118a6 6 0 100-12 6 6 0 000 12z" />
+                              <path id="RightEye" d="M158 118a6 6 0 100-12 6 6 0 000 12z" />
+                            </g>
+                            <g id="EyebrowGroup" fill="#000" fill-opacity=".6">
+                              <path id="LeftEyebrow" d="M91.591 96.162c4.496-6.326 14.012-9.508 23.756-6.366a2 2 0 001.228-3.807c-11.408-3.68-22.74.11-28.244 7.856a2 2 0 103.26 2.317z" />
+                              <path id="RightEyebrow" d="M172.377 103.158c-3.915-5.509-14.647-8.598-23.892-6.328a2 2 0 01-.954-3.884c10.736-2.637 23.165.94 28.107 7.895a1.998 1.998 0 01-.453 2.814 1.989 1.989 0 01-1.508.339 2.002 2.002 0 01-1.299-.836h-.001z" />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  
+
+                </div>
+              </div> 
+
+              <div class="row">
+                <div class="col">
+                  <div class="top-heading font-cedarville ">I'm Kyle.</div>
+                  <h3><a class="fas fa-chevron-down text-dark" href="#about-section"></a></h3>
+                     
+                </div>
+              </div> 
             </div>
         </div>
       </div>
 
       <!-- About Me -->
-      <div id="about-section" class="jumbotron jumbotron-fluid m-0 bg-l0">
+      <div id="about-section" class="jumbotron jumbotron-fluid m-0 bg-l0 pb-0">
         <div class="container">
-          <h1 class="display-7">About Me</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque viverra mauris. Commodo 
-            viverra maecenas accumsan lacus. Amet aliquam id diam maecenas ultricies. Elementum integer enim neque 
-            volutpat. Odio ut sem nulla pharetra diam sit amet. Mauris cursus mattis molestie a iaculis at erat pellentesque 
-            adipiscing. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Nunc faucibus a pellentesque sit 
-            amet porttitor eget. A erat nam at lectus urna. Augue lacus viverra vitae congue eu. Interdum velit laoreet id 
-            donec ultrices tincidunt arcu non sodales. Duis ut diam quam nulla porttitor. Vel orci porta non pulvinar neque 
-            laoreet suspendisse interdum. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. 
-            Malesuada pellentesque elit eget gravida. Neque aliquam vestibulum morbi blandit cursus risus at. Scelerisque 
-            eleifend donec pretium vulputate.
-          </p>
+          <div class="row">
+            <div class="col-3 d-none d-lg-block">
+              <img src="img/shocked-avatar.svg" alt="">
+            </div>
+            <div class="col-9">
+              <h1 class="display-7">Hello, I'm Kyle</h1>
+              <p class="lead">
+                A Brisbane based part-time student studying a Bachelor of IT. <br>
+                I major in Computer Science and minor in Interactive Design and Mobile Application Development. 
+              </p>
+              <a href="#" class="btn btn-dark rounded-circle mr-1"><i class="fab fa-github"></i></a>
+              <a href="#" class="btn btn-primary rounded-circle mr-1"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="btn btn-info rounded-circle mr-1"><i class="fas fa-file"></i></a>
+            </div>
+          </div>          
         </div>
       </div>
 
       <!-- Experience -->
-      <div id="experience-section" class="jumbotron jumbotron-fluid m-0 bg-l1">
+      <div id="experience-section" class="jumbotron jumbotron-fluid m-0 bg-l1 pb-0">
         <div class="container">
           <h1 class="display-7">Experience</h1>
 
           <div class="timeline">
+
             <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
               <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                <h3 class=" text-light">Timeline Heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
+                <h3 class=" text-light">Shalom College</h3>
+                <p>Shalom College High School, Bundaberg. Graduated with CoE in the Class of 2015</p>
               </div>
               <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                <img src="img/img13.png" class="img-fluid" alt="img">
+                <img src="img/school-solid.svg" class="img-fluid" alt="img">
               </div>
               <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                <time>2018-02-23</time>
+                <time>2011-2015</time>
               </div>
             </div>
+
             <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
               <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                <h3 class=" text-light">Timeline Heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
+                <h3 class=" text-light">Headquarters on Targo</h3>
+                <p>Reception and cleaning at the Bundaberg salon</p>
               </div>
               <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                <img src="img/img13.png" class="img-fluid" alt="img">
+                <img src="img/cash-register-solid.svg" class="img-fluid" alt="img">
               </div>
               <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                <time>2018-02-23</time>
+                <time>2016</time>
+              </div>
+            </div>
+
+            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                <h3 class=" text-light">QUT - University</h3>
+                <p>4th year student studying a Bachelor of IT, majoring in Computer Science and minoring in Interactive Design and Mobile Application Development. Maintaining a 6.2+ GPA</p>
+              </div>
+              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                <img src="img/graduation-cap-solid.svg" class="img-fluid" alt="img">
+              </div>
+              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                <time>2017 - Present</time>
+              </div>
+            </div>
+
+            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                <h3 class=" text-light">Zoom Carwash</h3>
+                <p>Detailing, Customer Service and Cleaning for the Brisbane based carwash</p>
+              </div>
+              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                <img src="img/car-solid.svg" class="img-fluid" alt="img">
+              </div>
+              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                <time>2018</time>
+              </div>
+            </div>
+
+            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                <h3 class=" text-light">Crossfire Marketing</h3>
+                <p>Door-to-door salesperson selling subscriptions for the Brisbane based marketing company</p>
+              </div>
+              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                <img src="img/comments-dollar-solid.svg" class="img-fluid" alt="img">
+              </div>
+              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                <time>2018 - 2019</time>
+              </div>
+            </div>
+
+            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                <h3 class=" text-light">Metro North</h3>
+                <p>Full-stack developer producing a webapp. Focused primarily on ASP.NET integration with Angular frontend and SQL Server database<br>(capstone project organised by QUT)</p>
+              </div>
+              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                <img src="img/laptop-code-solid.svg" class="img-fluid" alt="img">
+              </div>
+              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                <time>2019</time>
               </div>
             </div>
             
