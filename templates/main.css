@@ -1,6 +1,14 @@
+:root {
+  --accent-color: #eb94ff;
+}
+
 html, body {
   height:100%;
   font-family: 'Poppins', sans-serif!important;
+}
+
+.text-accent {
+  color: var(--accent-color);
 }
 
 .bgimg {
@@ -8,10 +16,11 @@ html, body {
   background-position: center bottom;
   background-size: cover; 
   background-repeat: no-repeat;
+  background-color: white;
 }
 
 .bg-l0 {
-  background-color: #e4e5e6;
+  background-color: var(--accent-color);
 }
 
 .bg-l1 {
@@ -27,7 +36,7 @@ html, body {
 }
 
 .top-heading {
-    font-size: 100px;
+    font-size: 90px;
 }
 
 .font-cedarville {
@@ -126,10 +135,10 @@ body{
 } 
 .timeline h3{
     font-weight: lighter;
-    background: var(--dark);
+    background: var(--accent-color);
 }
 .timeline p, .timeline time {
-    color: var(--dark)
+    color: var(--light)
 }
 .timeline::before {
     content: "";
@@ -138,13 +147,13 @@ body{
     top: 0;
     left: 50%;
     width: 0;
-    border-left: 2px dashed var(--dark);
+    border-left: 2px dashed var(--accent-color);
     height: 100%;
     z-index: 1;
     transform: translateX(-50%);
 }
 .timeline-content {
-    border: 1px solid var(--dark);
+    border: 1px solid var(--accent-color);
     position: relative;
     border-radius: 0 0 10px 10px;
     box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2)
@@ -166,7 +175,7 @@ body{
     top: 5%;
     left: 100%;
     width: 0;
-    border-left: 10px solid var(--dark);
+    border-left: 10px solid var(--accent-color);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
@@ -176,7 +185,7 @@ body{
     top: 5%;
     right: 100%;
     width: 0;
-    border-right: 10px solid var(--dark);
+    border-right: 10px solid var(--accent-color);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
@@ -188,14 +197,14 @@ body{
     content: "";
     width: 80px;
     height: 80px;
-    border: 2px dashed #ddd;
+    border: 2px dashed var(--dark);
     border-radius: 50%;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: #ddd;
+    background-color: var(--dark);
     z-index: 1;
     
 
@@ -221,7 +230,7 @@ body{
     top: 0;
     left: 4%;
     width: 0;
-    border-left: 2px dashed var(--dark);
+    border-left: 2px dashed var(--accent-color);
     height: 100%;
     z-index: 1;
     transform: translateX(-50%);
@@ -246,7 +255,7 @@ body{
     right: 100%;
     width: 0;
     border-left: 0;
-    border-right: 10px solid var(--dark);
+    border-right: 10px solid var(--accent-color);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
@@ -256,7 +265,7 @@ body{
     top: 5%;
     right: 100%;
     width: 0;
-    border-right: 10px solid var(--dark);
+    border-right: 10px solid var(--accent-color);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }

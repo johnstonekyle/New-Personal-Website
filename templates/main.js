@@ -11,12 +11,12 @@ $(document).ready(function(){
         var hash = this.hash;
 
         //navbar height
-        var navheight = 30;
+        var navheight = 56;
 
         //2000 specifies the speed
         $('html, body').animate({
             scrollTop: $(hash).offset().top - navheight
-        }, 2000, function(){
+        }, 1000, function(){
 
         });
         }

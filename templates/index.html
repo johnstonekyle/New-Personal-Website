@@ -20,6 +20,8 @@
 
     <script src="https://kit.fontawesome.com/3346ad4e0b.js" crossorigin="anonymous"></script>
 
+    <link href="hover.css" rel="stylesheet" media="all">
+
     <title>Kyle Johnstone</title>
   </head>
   <body>
@@ -29,8 +31,8 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <div class="container">
-          <a class="navbar-brand font-weight-bold" href="#home-section">
-            Kyle Johnstone <span class="font-weight-normal small text-muted d-none d-md-inline-block"> / Professional Human</span>
+          <a class="navbar-brand font-weight-bold hvr-skew" href="#home-section">
+            Kyle Johnstone <span class="font-weight-normal small text-accent d-none d-md-inline-block"> / Professional Human</span>
           </a>
           
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,16 +42,19 @@
             <ul class="navbar-nav ml-auto">
               <!-- linking to different sections on page -->
               <li class="nav-item">
-                <a class="nav-link" href="#about-section" data-toggle="collapse" data-target=".navbar-collapse.show">About Me</a>
+                <a class="nav-link hvr-skew" href="#about-section" data-toggle="collapse" data-target=".navbar-collapse.show">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#experience-section" data-toggle="collapse" data-target=".navbar-collapse.show">Experience</a>
+                <a class="nav-link hvr-skew" href="#projects-section" data-toggle="collapse" data-target=".navbar-collapse.show">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills-section" data-toggle="collapse" data-target=".navbar-collapse.show">Skills</a>
+                <a class="nav-link hvr-skew" href="#experience-section" data-toggle="collapse" data-target=".navbar-collapse.show">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact-section" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
+                <a class="nav-link hvr-skew" href="#skills-section" data-toggle="collapse" data-target=".navbar-collapse.show">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-skew" href="#contact-section" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
               </li>
             </ul>
           </div>
@@ -58,13 +63,13 @@
 
       <div class="container-full d-flex h-100 flex-column" id="home-section">
         <!-- make background image fill screen -->
-        <div class="row flex-fill m-0 d-flex overflow-auto bg-light text-dark bgimg"> 
+        <div class="row flex-fill m-0 d-flex overflow-auto text-dark bgimg"> 
             <div class="container align-self-center text-center">
               
               <div class="row">
                 <div class="col">
 
-                  <svg width="264" height="280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="hvr-shrink" width="264" height="280" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="avataaars-raised-eyebrow 1">
                       <mask id="mask0" maskUnits="userSpaceOnUse" x="0" y="0" width="264" height="280">
                         <g id="mask0">
@@ -167,146 +172,498 @@
         <div class="container">
           <div class="row">
             <div class="col-3 d-none d-lg-block">
-              <img src="img/shocked-avatar.svg" alt="">
+              <img class="img-fluid" src="img/avataaars-side-eyes.svg" alt="">
             </div>
-            <div class="col-9">
-              <h1 class="display-7">Hello, I'm Kyle</h1>
+            <div class="col-lg-9 text-light">
+              <h1>Hello, I'm Kyle</h1>
               <p class="lead">
                 A Brisbane based part-time student studying a Bachelor of IT. <br>
                 I major in Computer Science and minor in Interactive Design and Mobile Application Development. 
               </p>
-              <a href="#" class="btn btn-dark rounded-circle mr-1"><i class="fab fa-github"></i></a>
-              <a href="#" class="btn btn-primary rounded-circle mr-1"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="btn btn-info rounded-circle mr-1"><i class="fas fa-file"></i></a>
+              <a href="https://github.com/johnstonekyle" target="_blank" class="btn btn-dark rounded-circle mr-1 hvr-grow">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/kyle-j-johnstone/" target="_blank" class="btn btn-info rounded-circle mr-1 hvr-grow">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://drive.google.com/file/d/1ADqhofRwJM_YCynSAZrsiI-sbu3IB66H/view?usp=sharing" target="_blank" class="btn btn-light rounded-circle mr-1 hvr-grow">
+                <i class="fas fa-file"></i>
+              </a>
+              <div class="mb-5 d-block d-lg-none"></div>
             </div>
           </div>          
         </div>
       </div>
 
-      <!-- Experience -->
-      <div id="experience-section" class="jumbotron jumbotron-fluid m-0 bg-l1 pb-0">
-        <div class="container">
-          <h1 class="display-7">Experience</h1>
-
-          <div class="timeline">
-
-            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                <h3 class=" text-light">Shalom College</h3>
-                <p>Shalom College High School, Bundaberg. Graduated with CoE in the Class of 2015</p>
-              </div>
-              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                <img src="img/school-solid.svg" class="img-fluid" alt="img">
-              </div>
-              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                <time>2011-2015</time>
-              </div>
+      <!-- projects section -->
+      <div id="projects-section" class="jumbtron jumbotron-fluid m-0 bg-light">
+        <div class="card-group">
+          <div class="card">
+            <img src="img/projects/toybox.png" class="card-img-top" alt="toybox.com">
+            <div class="card-body">
+              <h5 class="card-title">ToyBox.com</h5>
+              <p class="card-text">
+                Plush toy marketplace for cash-on-delivery purchases. GPA 7 University Assignment.
+                <br><a class="text-accent btn" href="http://iab207-assign2.herokuapp.com/">visit site here</a>
+                <br><a class="text-accent btn" href="https://github.com/johnstonekyle/IAB207">visit source code here</a>
+              </p>
             </div>
-
-            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                <h3 class=" text-light">Headquarters on Targo</h3>
-                <p>Reception and cleaning at the Bundaberg salon</p>
-              </div>
-              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                <img src="img/cash-register-solid.svg" class="img-fluid" alt="img">
-              </div>
-              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                <time>2016</time>
-              </div>
+            <div class="card-footer">
+              <small class="text-muted">HTML, CSS, Bootstrap, Postgres, Flask, Python</small>
             </div>
-
-            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                <h3 class=" text-light">QUT - University</h3>
-                <p>4th year student studying a Bachelor of IT, majoring in Computer Science and minoring in Interactive Design and Mobile Application Development. Maintaining a 6.2+ GPA</p>
-              </div>
-              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                <img src="img/graduation-cap-solid.svg" class="img-fluid" alt="img">
-              </div>
-              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                <time>2017 - Present</time>
-              </div>
+          </div>
+          <div class="card">
+            <img src="img/projects/pictionario.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pictionar.io</h5>
+              <p class="card-text">
+                An online socket.io pictionary game you can play with friends. The gimmick being, you only get a single continuous line to draw your picture.
+                <br><a class="text-accent btn" href="http://pictionario.herokuapp.com/">visit site here</a>
+              </p>
             </div>
-
-            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                <h3 class=" text-light">Zoom Carwash</h3>
-                <p>Detailing, Customer Service and Cleaning for the Brisbane based carwash</p>
-              </div>
-              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                <img src="img/car-solid.svg" class="img-fluid" alt="img">
-              </div>
-              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                <time>2018</time>
-              </div>
+            <div class="card-footer">
+              <small class="text-muted">HTML, CSS, Bootstrap, Node.js</small>
             </div>
-
-            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                <h3 class=" text-light">Crossfire Marketing</h3>
-                <p>Door-to-door salesperson selling subscriptions for the Brisbane based marketing company</p>
-              </div>
-              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                <img src="img/comments-dollar-solid.svg" class="img-fluid" alt="img">
-              </div>
-              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                <time>2018 - 2019</time>
-              </div>
+          </div>
+          <div class="card">
+            <img src="img/projects/markov.png" class="card-img-top" alt="markov">
+            <div class="card-body">
+              <h5 class="card-title">Markov</h5>
+              <p class="card-text">
+                Website which generates unique names utilizing the Markov Chain Algorithm.
+                <br><a class="text-accent btn" href="http://kylejohnstone.epizy.com/">visit site here</a>
+              </p>
             </div>
-
-            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-              <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                <h3 class=" text-light">Metro North</h3>
-                <p>Full-stack developer producing a webapp. Focused primarily on ASP.NET integration with Angular frontend and SQL Server database<br>(capstone project organised by QUT)</p>
-              </div>
-              <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-                <img src="img/laptop-code-solid.svg" class="img-fluid" alt="img">
-              </div>
-              <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                <time>2019</time>
-              </div>
+            <div class="card-footer">
+              <small class="text-muted">HTML, CSS, Bootstrap, Python, JSON, JavaScript</small>
             </div>
-            
           </div>
         </div>
       </div>
 
-      <!-- Skills -->
-      <div id="skills-section" class="jumbotron jumbotron-fluid m-0 bg-l2">
+      <!-- Experience -->
+      <div id="experience-section" class="jumbotron jumbotron-fluid m-0 bg-light">
         <div class="container">
-          <h1 class="display-7">Skills</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque viverra mauris. Commodo 
-            viverra maecenas accumsan lacus. Amet aliquam id diam maecenas ultricies. Elementum integer enim neque 
-            volutpat. Odio ut sem nulla pharetra diam sit amet. Mauris cursus mattis molestie a iaculis at erat pellentesque 
-            adipiscing. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Nunc faucibus a pellentesque sit 
-            amet porttitor eget. A erat nam at lectus urna. Augue lacus viverra vitae congue eu. Interdum velit laoreet id 
-            donec ultrices tincidunt arcu non sodales. Duis ut diam quam nulla porttitor. Vel orci porta non pulvinar neque 
-            laoreet suspendisse interdum. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. 
-            Malesuada pellentesque elit eget gravida. Neque aliquam vestibulum morbi blandit cursus risus at. Scelerisque 
-            eleifend donec pretium vulputate.
-          </p>
+
+          <!-- Education -->
+          <div class="row">
+            <div class="col-2 d-none d-md-block"></div>
+            <div class="col-md">
+              <h1>Education</h1>
+              <hr>
+            </div>            
+            <div class="col-2 d-none d-md-block"></div>
+          </div>
+          
+          <div class="row mt-3">
+            <div class="col-2 d-none d-md-block"></div>
+            <div class="col-md">
+              <div class="font-weight-bold">
+                Queensland University of Technology
+              </div>
+              <div>
+                2017 - Present
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="font-weight-bold">
+                Bachelor of Information Technology
+              </div>
+              <div>
+                4th year student studying a Bachelor of IT, majoring in Computer Science and minoring in Interactive Design and Mobile Application Development. Maintaining a 6.2+ GPA
+              </div>
+              <div class="text-accent">
+                <i class="fas fa-map-marker-alt"></i> Brisbane
+              </div>
+            </div>
+            <div class="col-2 d-none d-md-block"></div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-2 d-none d-md-block"></div>
+            <div class="col-md">
+              <div class="font-weight-bold">
+                Shalom College
+              </div>
+              <div>
+                2011 - 2015
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="font-weight-bold">
+                Highschool CoE
+              </div>
+              <div>
+                Graduated with CoE in the Class of 2015. I enjoyed my school's IT oriented subjects (ITS & IPT)
+              </div>
+              <div class="text-accent">
+                <i class="fas fa-map-marker-alt"></i> Bundaberg
+              </div>
+            </div>
+            <div class="col-2 d-none d-md-block"></div>
+          </div>
+          
+          <!-- work -->
+          <div class="row mt-5">
+            <div class="col-2 d-none d-md-block"></div>
+            <div class="col-md">
+              <h1>Work</h1>
+              <hr>
+            </div>            
+            <div class="col-2 d-none d-md-block"></div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-2 d-none d-md-block"></div>
+            <div class="col-md">
+              <div class="font-weight-bold">
+                Metro North Hospital and Oral Health Services
+              </div>
+              <div>
+                2019
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="font-weight-bold">
+                Full-stack Developer
+              </div>
+              <div>
+                Focused primarily on ASP.NET integration with Angular frontend and SQL Server database (capstone project organised by QUT)
+              </div>
+              <div class="text-accent">
+                <i class="fas fa-map-marker-alt"></i> Brisbane
+              </div>
+            </div>
+            <div class="col-2 d-none d-md-block"></div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-2 d-none d-md-block"></div>
+            <div class="col-md">
+              <div class="font-weight-bold">
+                Crossfire Marketing
+              </div>
+              <div>
+                2018 - 2019
+              </div>
+            </div>
+
+            <div class="col-md">
+              <div class="font-weight-bold">
+                Salesperson
+              </div>
+              <div>
+                Door-to-door salesperson selling monthly subscriptions for the Brisbane Mater Hospital
+              </div>
+              <div class="text-accent">
+                <i class="fas fa-map-marker-alt"></i> Brisbane & Bundaberg
+              </div>
+            </div>
+            <div class="col-2 d-none d-md-block"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div id="skills-section" class="jumbotron jumbotron-fluid m-0 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-2 d-none d-md-block"></div>
+            <div class="col-md">
+              <h1>Skills</h1>
+              <hr>
+            </div>            
+            <div class="col-2 d-none d-md-block"></div>
+          </div>
+    
+          <div class="row">
+            <div class="col-2 d-none d-md-block"></div>
+            <!-- column 1 -->
+            <div class="col-md">
+
+              <div class="row">
+                <div class="col">HTML</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">CSS</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">SQL</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Bootstrap</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">C#</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Scrum</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">JQuery</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+              
+              <div class="row">
+                <div class="col">Angular</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">ASP.NET</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Flask</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              
+            </div>
+
+            <!-- column 2 -->
+            <div class="col-md">
+
+              <div class="row">
+                <div class="col">Java</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Node.js</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">JSON</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Python</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">C</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Django</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">XML</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">PHP</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Xamarin</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+            </div>
+            <div class="col-2 d-none d-md-block"></div>
+          </div>
+
+          
+
+          <div class="row mt-5">
+            <div class="col-2 d-none d-md-block"></div>
+            <div class="col-md">
+              <h1>Tools</h1>
+              <hr>
+            </div>            
+            <div class="col-2 d-none d-md-block"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-2 d-none d-md-block"></div>
+            <!-- column 1 -->
+            <div class="col-md">
+
+              <div class="row">
+                <div class="col">VS Code</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Git</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Windows</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Chrome</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Visual Studio</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">MS Office Suite</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Notepad++</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+              
+              <div class="row">
+                <div class="col">Firefox</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Figma</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Slack</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">MS Teams</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+            </div>
+
+            <!-- column 2 -->
+            <div class="col-md">
+
+              <div class="row">
+                <div class="col">Azure</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Trello</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Jira</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">DevOps</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Photoshop</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Unity3D</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Linux</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Blender</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">macOS</div>
+                <div class="col"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+              <div class="row">
+                <div class="col">Adobe XD</div>
+                <div class="col"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+              </div>
+
+            </div>
+            <div class="col-2 d-none d-md-block"></div>
+          </div>
+
         </div>
       </div>
 
       <!-- Contact -->
-      <div id="contact-section" class="jumbotron jumbotron-fluid m-0 bg-l3">
+      <div id="contact-section" class="jumbotron jumbotron-fluid m-0 bg-light bgimg">
         <div class="container">
-          <h1 class="display-7">Contact</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque viverra mauris. Commodo 
-            viverra maecenas accumsan lacus. Amet aliquam id diam maecenas ultricies. Elementum integer enim neque 
-            volutpat. Odio ut sem nulla pharetra diam sit amet. Mauris cursus mattis molestie a iaculis at erat pellentesque 
-            adipiscing. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Nunc faucibus a pellentesque sit 
-            amet porttitor eget. A erat nam at lectus urna. Augue lacus viverra vitae congue eu. Interdum velit laoreet id 
-            donec ultrices tincidunt arcu non sodales. Duis ut diam quam nulla porttitor. Vel orci porta non pulvinar neque 
-            laoreet suspendisse interdum. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. 
-            Malesuada pellentesque elit eget gravida. Neque aliquam vestibulum morbi blandit cursus risus at. Scelerisque 
-            eleifend donec pretium vulputate.
-          </p>
+          <div class="row">
+            <div class="col-sm-4">
+              <a href="https://github.com/johnstonekyle" target="_blank" class="btn text-info">
+                <i class="fab fa-github"></i>&nbsp; Github
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <a href="https://www.linkedin.com/in/kyle-j-johnstone/" target="_blank" class="btn text-info">
+                <i class="fab fa-linkedin-in"></i>&nbsp; LinkedIn
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <a href="https://sites.google.com/view/kyle-johnstone/projects" target="_blank" class="btn text-info">
+                <i class="fas fa-project-diagram"></i>&nbsp; More Projects
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <a href="https://drive.google.com/file/d/1ADqhofRwJM_YCynSAZrsiI-sbu3IB66H/view?usp=sharing" target="_blank" class="btn text-info">
+                <i class="fas fa-file"></i>&nbsp; Resume
+              </a>
+            </div>
+            <div class="col-sm-4">
+              <a href="https://drive.google.com/file/d/16G40bGNYPAm4pjqX7Y-yjMGRQmNzMavp/view?usp=sharing" target="_blank" class="btn text-info">
+              <i class="fas fa-graduation-cap"></i>&nbsp; Academic Results
+            </a>
+          </div>
+            <div class="col-sm-4">
+              <a href="https://github.com/johnstonekyle/New-Personal-Website" target="_blank" class="btn text-info">
+                <i class="fas fa-code"></i>&nbsp; Source Code
+              </a>
+            </div>
+          </div>
+          <div class="row mt-5 text-info">
+            <div class="col">
+              Developed by Kyle Johnstone 2020 using Avataaar, Bootstrap, Font Awesome
+            </div>    
+          </div>
         </div>
       </div>
 
